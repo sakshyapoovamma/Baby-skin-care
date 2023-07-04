@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#E8DFCA"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="28dp"
+            android:gravity="center"
+            android:text=" Within a few months, your baby will be ready for a variety of foods and one to two meals a day. By 8 to 12 months old, you may have an enthusiastic eater who enjoys plenty of soft finger foods and wants three meals plus snacks every day."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtclose"
+            android:layout_width="24dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="276dp"
+
+            android:layout_marginBottom="220dp"
+            android:gravity="center"
+            android:text="X"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

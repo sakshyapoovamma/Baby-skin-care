@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foodpage"
+    android:background="@drawable/vilasbg4">
+
+    <ImageButton
+        android:id="@+id/babyfoodbutton"
+        android:layout_width="89dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/babymilkButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/babymedicineButton"
+        app:srcCompat="@drawable/babyfood" />
+
+    <ImageButton
+        android:id="@+id/babymilkButton"
+        android:layout_width="89dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="44dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/milkbottle" />
+
+    <ImageButton
+        android:id="@+id/babymedicineButton"
+        android:layout_width="89dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="44dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/medicine" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="281dp"
+        android:layout_height="282dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726"
+        app:srcCompat="@drawable/baby" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/rounder_textview"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/rounder_textview"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/rounder_textview"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/homebutton"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/home" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="56dp"
+        android:background="#6E6E6E"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#131313"
+            android:backgroundTint="#2B2A2A"
+            android:gravity="center"
+            android:text="Hunger"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/hungerprogressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:progressDrawable="@drawable/customprogbg" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
